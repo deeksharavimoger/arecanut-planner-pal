@@ -1,1 +1,7 @@
 project_id = "tordywvvsfzwvthuykub"
+
+[functions.weather]
+verify_jwt = false
+
+[functions.analyze-disease]
+verify_jwt = false

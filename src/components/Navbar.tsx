@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Weather", path: "/weather" },
   { name: "Market Prices", path: "/market" },
   { name: "Planting Guide", path: "/planting" },
+  { name: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {

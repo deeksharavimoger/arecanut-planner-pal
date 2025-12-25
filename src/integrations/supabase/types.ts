@@ -14,7 +14,84 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      consultation_bookings: {
+        Row: {
+          created_at: string
+          email: string | null
+          farmer_name: string
+          id: string
+          issue_description: string
+          issue_type: string
+          location: string
+          phone: string
+          plantation_size: string
+          preferred_date: string
+          preferred_time: string
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          farmer_name: string
+          id?: string
+          issue_description: string
+          issue_type: string
+          location: string
+          phone: string
+          plantation_size: string
+          preferred_date: string
+          preferred_time: string
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          farmer_name?: string
+          id?: string
+          issue_description?: string
+          issue_type?: string
+          location?: string
+          phone?: string
+          plantation_size?: string
+          preferred_date?: string
+          preferred_time?: string
+          status?: string
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string | null
+          status: string
+          subject: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone?: string | null
+          status?: string
+          subject: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string | null
+          status?: string
+          subject?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

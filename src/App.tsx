@@ -10,6 +10,7 @@ import PestManagement from "./pages/PestManagement";
 import WeatherAdvisory from "./pages/WeatherAdvisory";
 import MarketPrices from "./pages/MarketPrices";
 import PlantingGuide from "./pages/PlantingGuide";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/weather" element={<WeatherAdvisory />} />
             <Route path="/market" element={<MarketPrices />} />
             <Route path="/planting" element={<PlantingGuide />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

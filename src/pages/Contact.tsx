@@ -252,7 +252,7 @@ const Contact = () => {
                   <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
                   <h3 className="font-semibold text-foreground mb-1">Visit Us</h3>
                   <p className="text-muted-foreground text-sm">
-                    Agricultural Hub, Shimoga, Karnataka
+                    Agricultural Hub, Mangalore, Karnataka
                   </p>
                 </CardContent>
               </Card>

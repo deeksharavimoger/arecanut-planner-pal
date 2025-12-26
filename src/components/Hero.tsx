@@ -41,11 +41,13 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <Link to="/diseases">
             <Button variant="accent" size="xl" className="group">
               <Scan className="w-5 h-5" />
               Scan Your Arecanut
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
+          </Link>
             <Button variant="outline" size="xl" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
               Explore Features
             </Button>
